@@ -1,0 +1,24 @@
+name: Append Line
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Create local changes
+      run: |
+        echo "IT DID!" >> test.txt
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Adds line" -a
+    - name: Push changes
+      uses: yum-yab/actions-test@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
