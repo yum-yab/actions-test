@@ -13,6 +13,7 @@ jobs:
     - name: Create local changes
       run: |
         echo "IT DID!" >> test.txt
+        echo "Creating a new File..." > newfile.txt
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
