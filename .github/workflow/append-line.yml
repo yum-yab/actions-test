@@ -1,3 +1,10 @@
+name: Append Line
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
