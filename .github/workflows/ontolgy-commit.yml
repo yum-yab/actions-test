@@ -7,9 +7,9 @@ on:
 
 jobs:
         deploy-new-version:
-                - uses: actions/checkout@v2
                 runs-on: ubuntu-latest
                 steps:
+                        - uses: actions/checkout@v2
                         - name: Run Script
                           env:
                                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
