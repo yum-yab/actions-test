@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/bin/bash
 
 checkDiff() {
           old_file=$1
