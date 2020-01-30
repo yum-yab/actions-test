@@ -11,11 +11,11 @@ jobs:
                 steps:
                         - uses: actions/checkout@v2
                         - name: Run Script
+                          uses: actions/setup-java@v1
                           env:
                                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                                 WEBID_KEY: ${{ secrets.WEBID_KEY}}
                           run: |
-                            apt-get install maven
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
