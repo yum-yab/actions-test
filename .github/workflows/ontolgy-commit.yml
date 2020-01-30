@@ -15,11 +15,13 @@ jobs:
                                 GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                                 WEBID_KEY: ${{ secrets.WEBID_KEY}}
                           run: |
+                            apt-get install maven
+                            eval $(ssh-agent -s)
+                            mkdir -p ~/.ssh
+                            chmod 700 ~/.ssh
+                            echo "$SSH_PRIVATE_KEY" | ssh-add - > ~/.ssh/id_rsa
                             cd ontology/
                             git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
-                            eval `ssh-agent -t 60 -s`
-                            echo "$GITHUB_TOKEN" | ssh-add -
-                            mkdir -p ~/.ssh/
                             ssh-keyscan github.com >> ~/.ssh/known_hosts
 
                             mkdir ~/.m2/
