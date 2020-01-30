@@ -1,25 +1,68 @@
-name: Append Line
+name: Update Ontology
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '*/30 * * * *'
 
 
 jobs:
-  build:
+  deploy-new-version:
+    env: 
+      FULL_VERSION: null
+      FILE_HASH: null
+      DATAID_HASH: null
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Create local changes
+    - name: Diff-Check
       run: |
-        echo "IT DID!" >> test.txt
-        echo "Creating a new File..." > newfile.txt
-    - name: Commit files
+        echo "::set-env name=FULL_VERSION::$(date +%Y.%m.%d-%H%M%S)"
+        bash -c ontology/ontology-diff-check.sh
+    - name: Generate new ontology files
+      if: success()
+      run: |
+        bash -c ontology/generate-files.sh
+    - name: Commit new Ontology-Version
+      if: success()
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "Adds line" -a
-    - name: Push changes
+        git commit -m "New Ontology" -a
+    - name: Push new Version
+      if: success()
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Generate dataid.ttl
+      if: success()
+      run: |
+        cd ontology/
+        echo "::set-env name=FILE_HASH::$(git log -1 --format=%H)"
+        
+        # generates the dataid.ttl for the right version
+        mvn versions:set -DnewVersion=$FULL_VERSION
+        mvn package -DfileHash=$FILE_HASH
+
+        # Copying the new dataId into the git
+        cp dbo-snapshots/target/databus/$fullVersion/dataid.ttl $repoPomDir/dbo-snapshots/dataid.ttl
+        
+    - name: Commit dataId
+      if: success()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Commit dataId" -a
+    - name: Push dataId
+      if: success()
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Deploy to databus
+      if: success()
+      run: |
+        echo "::set-env name=DATAID_HASH::$(git log -1 --format=%H)"
+        mvn databus:deploy -DfileHash=$FILE_HASH -DdataIdHash=$DATAID_HASH
+    - name: Clean directory
+      if: always()
+      run: |
+        rm -r ontology/data/
