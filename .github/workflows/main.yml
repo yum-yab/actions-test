@@ -16,12 +16,14 @@ jobs:
     - uses: actions/checkout@v2
     - name: Diff-Check
       run: |
+        cd ontology/
         echo "::set-env name=FULL_VERSION::$(date +%Y.%m.%d-%H%M%S)"
-        bash -c ontology/ontology-diff-check.sh
+        bash -c ./ontology-diff-check.sh
     - name: Generate new ontology files
       if: success()
       run: |
-        bash -c ontology/generate-files.sh
+        cd ontology/
+        bash -c ./generate-files.sh
     - name: Commit new Ontology-Version
       if: success()
       run: |
