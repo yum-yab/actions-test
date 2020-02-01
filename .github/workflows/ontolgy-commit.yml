@@ -2,7 +2,7 @@ name: Ontology-tracker
 
 on:
   schedule:
-    - cron:  '0 18 * * *'
+    - cron:  '*/5 * * * *'
 
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
-                            echo "$SSH_PRIVATE_KEY" | ssh-add - > ~/.ssh/id_rsa
+                            echo "$GITHUB_TOKEN" | ssh-add - > ~/.ssh/id_rsa
                             cd ontology/
                             git remote set-url origin "$(git config --get remote.origin.url | sed 's#http.*com/#git@github.com:#g')"
                             ssh-keyscan github.com >> ~/.ssh/known_hosts
