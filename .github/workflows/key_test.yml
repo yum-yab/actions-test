@@ -13,6 +13,7 @@ jobs:
                         env:
                             STUPID_KEY: ${{ secrets.STUPID_KEY }}
                             GITTHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+                            WEBID_PKG: ${{ secrets.WEBID_PKG }} 
                         run: |
                           echo "$STUPID_KEY"
                       
