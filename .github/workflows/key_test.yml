@@ -12,6 +12,7 @@ jobs:
                       - name: Test the Key
                         env:
                             STUPID_KEY: ${{ secrets.STUPID_KEY }}
+                            GITTHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
                         run: |
                           echo "$STUPID_KEY"
                       
