@@ -19,6 +19,7 @@ jobs:
                                 SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
                                 WEBID_PKG: ${{ secrets.WEBID_PKG }}
                           run: |
+                            apt-get install raptor
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
