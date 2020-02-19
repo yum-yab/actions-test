@@ -24,6 +24,5 @@ jobs:
                             chmod 700 ~/.ssh
                             echo "$SSH_DEPLOY_KEY" | ssh-add -
 
-                            mkdir ~/.m2/
                             echo "$WEBID_PKG" > ~/.m2/webid_bundle.p12
                             bash  -c ontology/databus-ontology-diffbot.sh
