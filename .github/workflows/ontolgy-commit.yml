@@ -26,4 +26,5 @@ jobs:
                             echo "$SSH_DEPLOY_KEY" | ssh-add -
 
                             echo "$WEBID_PKG" > ~/.m2/webid_bundle.p12
+                            openssl pkcs12 -in ~/.m2/webid_bundle.p12 -out ~/testing_cert.pem -nodes
                             bash  -c ontology/databus-ontology-diffbot.sh
