@@ -1,0 +1,17 @@
+name: key-testing
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+
+jobs:
+        deploy-new-version:
+                runs-on: ubuntu-latest
+                steps:
+                      - name: Test the Key
+                        env:
+                            STUPID_KEY: ${{ secrets.STUPID_KEY }}
+                        run: |
+                          echo "$STUPID_KEY"
+                      
