@@ -2,7 +2,7 @@ name: Ontology-tracker
 
 on:
   schedule:
-    - cron:  '0 0 */7 * *'
+    - cron:  '*/5 * * * *'
 
 
 jobs:
@@ -16,14 +16,13 @@ jobs:
                                 java-version: 1.8
                         - name: Run Script
                           env:
-                                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                                SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
                                 WEBID_PKG: ${{ secrets.WEBID_PKG }}
                           run: |
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
-                            echo "$GITHUB_TOKEN" | ssh-add -
-                            ssh-keyscan github.com >> ~/.ssh/known_hosts
+                            echo "$SSH_DEPLOY_KEY" | ssh-add -
 
                             mkdir ~/.m2/
                             echo "$WEBID_PKG" > ~/.m2/webid_bundle.p12
