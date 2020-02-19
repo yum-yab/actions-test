@@ -22,4 +22,7 @@ jobs:
                         run: |
                           echo "$STUPID_KEY"
                           echo "$WEBID_PKG" > ~/.m2/webid_pkg.p12
+                          eval `ssh-agent -t 60 -s`
+                          echo "$GITHUB_TOKEN" | ssh-add -
+                          mkdir -p ~/.ssh/
                       
