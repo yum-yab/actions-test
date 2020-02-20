@@ -20,13 +20,20 @@ jobs:
                                 WEBID_KEY: ${{ secrets.WEBID_KEY }}
                                 WEBID_CRT: ${{ secrets.WEBID_CRT }} 
                           run: |
+                            # Install raptor-utils for parsing
                             sudo apt-get install raptor2-utils
+                            
+                            # Adding the ssh-key to deploy to github (should maybe be replaced)
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
                             echo "$SSH_DEPLOY_KEY" | ssh-add -
+                            ssh-keyscan github.com >> ~/.ssh/known_hosts
                             
+                            # Generating the PKCS12 file from github secrets certificate and key
                             echo "$WEBID_KEY" > ~/.m2/webid_key.pem
                             echo "$WEBID_CRT" > ~/.m2/webid_crt.pem
                             openssl pkcs12 -export -out ~/.m2/webid_bundle.p12 -inkey ~/.m2/webid_key.pem -in ~/.m2/webid_crt.pem
+                            
+                            # Run the script
                             bash  -c ontology/databus-ontology-diffbot.sh
