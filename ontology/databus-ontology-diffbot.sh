@@ -122,7 +122,7 @@ then
 	
 
 	cp $newVersionDirectory/dbo-snapshots.* "${repoPomDir}"/dbo-snapshots/
-	#commitAndRelease
+	commitAndRelease
 else
 	echo "No new Version!"
 	rm -r $newVersionDirectory 
