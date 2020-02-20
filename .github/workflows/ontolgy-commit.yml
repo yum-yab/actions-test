@@ -17,16 +17,16 @@ jobs:
                         - name: Run Script
                           env:
                                 SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
-                                WEBID_PKG: ${{ secrets.WEBID_PKG }}
+                                WEBID_KEY: ${{ secrets.WEBID_KEY }}
+                                WEBID_CRT: ${{ secrets.WEBID_CRT }} 
                           run: |
                             sudo apt-get install raptor2-utils
                             eval $(ssh-agent -s)
                             mkdir -p ~/.ssh
                             chmod 700 ~/.ssh
                             echo "$SSH_DEPLOY_KEY" | ssh-add -
-
-                            echo "$WEBID_PKG" > ~/.m2/webid_bundle.p12
-                            echo "Validating pkcs12 file..."
-                            openssl pkcs12 -in ~/.m2/webid_bundle.p12 -out ~/testing_cert.pem -nodes
-                            echo "Done!"
+                            
+                            echo "$WEBID_KEY" > ~/.m2/webid_key.pem
+                            echo "$WEBID_CRT" > ~/.m2/webid_crt.pem
+                            openssl pkcs12 -export -out ~/.m2/webid_bundle.p12 -inkey ~/.m2/webid_key.pem -in ~/.m2/webid_crt.pem
                             bash  -c ontology/databus-ontology-diffbot.sh
