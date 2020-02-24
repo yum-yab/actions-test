@@ -13,7 +13,7 @@
             <dcterms:publisher>DBpedia Maintainers</dcterms:publisher>
             <dcterms:creator>DBpedia Maintainers and Contributors</dcterms:creator>
             <dcterms:issued>2008-11-17T12:00Z</dcterms:issued>
-            <dcterms:modified>2020-02-20T12:01Z</dcterms:modified>
+            <dcterms:modified>2020-02-24T07:34Z</dcterms:modified>
             <owl:versionInfo xml:lang="en">latest-snapshot</owl:versionInfo>
             <rdfs:comment xml:lang="en">
               This ontology is generated from the manually created specifications in the DBpedia Mappings
@@ -1280,7 +1280,7 @@ Includes concentration, extermination, transit, detention, internment, (forced) 
         </owl:Class><owl:Class rdf:about="http://dbpedia.org/ontology/Surname">
         <rdfs:label xml:lang="de">Nachname</rdfs:label><rdfs:label xml:lang="pl">nazwisko</rdfs:label><rdfs:label xml:lang="el">επώνυμο</rdfs:label><rdfs:label xml:lang="fr">nom de famille</rdfs:label><rdfs:label xml:lang="ga">sloinne</rdfs:label><rdfs:label xml:lang="ko">성씨</rdfs:label><rdfs:label xml:lang="nl">achternaam</rdfs:label><rdfs:label xml:lang="ja">家</rdfs:label><rdfs:label xml:lang="en">surname</rdfs:label><rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Name"/><prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Surname"/>
         </owl:Class><owl:Class rdf:about="http://dbpedia.org/ontology/Protocol">
-        <rdfs:label xml:lang="en">Protocol</rdfs:label><rdfs:label xml:lang="ru">Протокол</rdfs:label><rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/><prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Protocol"/>
+        <rdfs:label xml:lang="en">Protocol</rdfs:label><rdfs:label xml:lang="de">Protokoll</rdfs:label><rdfs:label xml:lang="ru">Протокол</rdfs:label><rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/><prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Protocol"/>
         </owl:Class><owl:Class rdf:about="http://dbpedia.org/ontology/Mammal">
         <rdfs:label xml:lang="de">säugetier</rdfs:label><rdfs:label xml:lang="pl">ssak</rdfs:label><rdfs:label xml:lang="el">θηλαστικό ζώο</rdfs:label><rdfs:label xml:lang="fr">mammifère</rdfs:label><rdfs:label xml:lang="it">mammifero</rdfs:label><rdfs:label xml:lang="es">mamífero</rdfs:label><rdfs:label xml:lang="ga">mamach</rdfs:label><rdfs:label xml:lang="da">pattedyr</rdfs:label><rdfs:label xml:lang="nl">zoogdier</rdfs:label><rdfs:label xml:lang="pt">mamífero</rdfs:label><rdfs:label xml:lang="ja">哺乳類</rdfs:label><rdfs:label xml:lang="en">mammal</rdfs:label><rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Animal"/><owl:equivalentClass rdf:resource="http://www.wikidata.org/entity/Q7377"/><owl:disjointWith rdf:resource="http://dbpedia.org/ontology/Fish"/><prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:Mammal"/>
         </owl:Class><owl:Class rdf:about="http://dbpedia.org/ontology/Medicine">

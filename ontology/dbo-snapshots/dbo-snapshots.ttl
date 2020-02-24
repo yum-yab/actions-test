@@ -1474,7 +1474,7 @@
               The DBpedia ontology provides the classes and properties used in the DBpedia data set.
             """@en ;
     dcterms:issued "2008-11-17T12:00Z" ;
-    dcterms:modified "2020-02-20T12:01Z" ;
+    dcterms:modified "2020-02-24T07:34Z" ;
     dcterms:publisher "DBpedia Maintainers" ;
     dcterms:source <http://mappings.dbpedia.org> ;
     dcterms:title "The DBpedia Ontology"@en ;
@@ -5813,7 +5813,7 @@ Includes concentration, extermination, transit, detention, internment, (forced) 
 
 :Protocol
     a owl:Class ;
-    rdfs:label "Protocol"@en, "Протокол"@ru ;
+    rdfs:label "Protocol"@en, "Protokoll"@de, "Протокол"@ru ;
     rdfs:subClassOf owl:Thing ;
     prov:wasDerivedFrom <http://mappings.dbpedia.org/index.php/OntologyClass:Protocol> .
 
