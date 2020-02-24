@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  schedule:
+    - cron:  '*/5 * * * *'
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |
+        git config --local user.email "ontology-commit-bot@test"
+        git config --local user.name "ontology-commit-bot"   
+        echo "IT WORKED!" >> test.txt
+        git add test.txt
+        git commit -m "Test pushing without key..."
+        git push
