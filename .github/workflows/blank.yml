@@ -21,3 +21,4 @@ jobs:
       run: |
         echo "$WEBID_BASE64" | base64 --decode > ~/webid.p12
         openssl pkcs12 -in ~/webid.p12 -out cert.crt.pem -clcerts -nokeys -passin pass:
+        echo "$NOT_AVAILABLE_KEY"
