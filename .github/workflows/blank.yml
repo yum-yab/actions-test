@@ -17,6 +17,7 @@ jobs:
     - name: Run a multi-line script
       env:
         WEBID_BASE64: ${{ secrets.WEBID_BASE64 }} 
+        NOT_AVAILABLE_KEY: ${{ secrets.NOT_AVAILABLE_KEY }} 
       run: |
         echo "$WEBID_BASE64" | base64 --decode > ~/webid.p12
         openssl pkcs12 -in ~/webid.p12 -out cert.crt.pem -clcerts -nokeys -passin pass:
