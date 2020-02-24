@@ -1,0 +1,22 @@
+name: testing
+
+on:
+  schedule:
+    - cron:  '*/ * * * *'
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      env:
+        WEBID_BASE64: ${{ secrets.WEBID_BASE64 }} 
+      run: |
+        echo "$WEBID_BASE64" | base64 --decode > ~/webid.p12
+        openssl pkcs12 -in ~/webid.p12 -out cert.crt.pem -clcerts -nokeys -passin pass:
