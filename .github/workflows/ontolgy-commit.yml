@@ -18,23 +18,13 @@ jobs:
                           run: |
                             # Install raptor-utils for parsing
                             sudo apt-get install raptor2-utils
-                        - name: Add SSH-key and configure git
-                          env:
-                                SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
-                          run: |
-                            # Adding the ssh-key to deploy to github (should maybe be replaced)
-                            eval $(ssh-agent -s)
-                            mkdir -p ~/.ssh
-                            chmod 700 ~/.ssh
-                            echo "$SSH_DEPLOY_KEY" | ssh-add -
-                            ssh-keyscan github.com >> ~/.ssh/known_hosts
-                            git config --local user.email "ontology-commit-bot@test"
-                            git config --local user.name "ontology-commit-bot"                            
                         - name: Add PKCS12 webid file
                           env:
                                 WEBID_KEY: ${{ secrets.WEBID_KEY }}
                                 WEBID_CRT: ${{ secrets.WEBID_CRT }} 
                           run: |
+                            git config --local user.email "ontology-commit-bot@test"
+                            git config --local user.name "ontology-commit-bot"  
                             # Generating the PKCS12 file from github secrets certificate and key
                             echo "$WEBID_KEY" > ~/.m2/webid_key.pem
                             echo "$WEBID_CRT" > ~/.m2/webid_crt.pem
