@@ -29,7 +29,7 @@
         dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
         dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
         dct:hasVersion          "1.3-SNAPSHOT" ;
-        dct:issued              "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:issued              "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license             <http://purl.oclc.org/NET/rdflicense/cc-zero1.0> ;
         dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
         dct:title               "DataID metadata for ontology/dbo-snapshots"@en .
@@ -45,28 +45,31 @@ dataid-mt:ApplicationRDFXML
         dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:compression           "None" ;
         dataid:duplicates            "0"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144/dbo-snapshots.ttl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451/dbo-snapshots.ttl> ;
         dataid:formatExtension       "ttl" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
         dataid:nonEmptyLines         "24345"^^xsd:decimal ;
         dataid:preview               "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix foaf: <http://xmlns.com/foaf/0.1/> .\n@prefix cc: <http://creativecommons.org/ns#> .\n@prefix vann: <http://purl.org/vocab/vann/> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix dc: <http://purl.org/dc/elements/1.1/> .\n@prefix wgs84pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .\n@prefix cidoccrm: <http://purl.org/NET/cidoc-crm/core#> .\n@prefix wikidata: <http://www.wikidata.org/entity/> .\n@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> ." ;
-        dataid:sha256sum             "4edbeb61c19c0dcef36764a02da7cc291dbdaca7fffa9107bccdba116585ad3d" ;
-        dataid:signature             "YpGS35rDY81gEdoxKiAbvU6OZl9P9Q+rxARnUe1xm84pp2Gjzj5RF9aTNjIMFJZtWfllo+73Q+sLfNlj0F78PzDpTd2u6Rvkv6+wzjeNl3wbcsPS2oYSGiKUC5HsbtAJ16V3rnPrmGvYL9hbspBILFrMqE3dFiDQ0T8dq3dI0w8PH/5HDp9qaDEK3arE2cKVGOOE/77ouV863V48zqLPID/0kxuphP15rS8Gow+AerQkzD8SGKrJwdbjnMB/F1fXQ4GYZrn+5cFEUmqwexPrrMCNCNH4NIbNnCww/6BiC0iKkRJPzBNKHhfu9wjer/SQ0xMICzdReVb2S9Jm+SKhLg==" ;
+        dataid:sha256sum             "1ac6c6babd09f8bfcb55a78ee40f822aaafe68eff88851c6f5f26e232ba960c5" ;
+        dataid:signature             "G4ONb97NCJOCcOTUP/eDrS4ojFIBG75M8mrjPI7qW6HuUKBEAJnqALMPwXPGqamq5GHvl9RZ7/etGS9UlCE3A54waQuSSifL7L6hm9mLqamjSYmTNHIv2yPeGFAM9xDE0RsMqDyrmHg/BpONVN+8uceYcm45idWY67nuGgAlSsBzpg2BvGvQAXwBVCneUtG2SOt7V1bBV1nKtc8g2aFX9ANt+QFKETGDQNs02jVSoUx1EUVr4fVLIOZoXCTGBA1tgglvcy4CAgyVe5pnOkxLtubKx0PtaczBCy4QT/dFMW9Uix4aZVte/4wM5ikgZjS5n0IZzBgufGVTNBkZ8JWgHw==" ;
         dataid:sorted                false ;
-        dataid:uncompressedByteSize  "1312754"^^xsd:decimal ;
+        dataid:uncompressedByteSize  "1312770"^^xsd:decimal ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.20-120144" ;
-        dct:issued                   "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.02.24-073451" ;
+        dct:issued                   "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-20T12:01:47Z"^^xsd:dateTime ;
+        dct:modified                 "2020-02-24T07:34:55Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
-        dcat:byteSize                "1312754"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/08e5f394cabb73bac95d937908e63ab080b55611/ontology/dbo-snapshots/dbo-snapshots.ttl> ;
+        dcat:byteSize                "1312770"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/73dba7cd702d85bc7132236567f0f6e47ccbe037/ontology/dbo-snapshots/dbo-snapshots.ttl> ;
         dcat:mediaType               dataid-mt:TextTurtle .
 
 <https://databus.dbpedia.org/denis/ontology>
         a       dataid:Group .
+
+<https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451>
+        a       dataid:Version .
 
 dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
         dataid:mimetype  "UNKNOWN" .
@@ -78,13 +81,13 @@ dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
         dataid:artifact         <https://databus.dbpedia.org/denis/ontology/dbo-snapshots> ;
         dataid:associatedAgent  <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:group            <https://databus.dbpedia.org/denis/ontology> ;
-        dataid:groupdocu        "## Attribution fulfilled by\n* (when deriving another dataset and releasing to the Databus) adding the Databus link to the provenance https://databus.dbpedia.org/dbpedia/ontology/dbo-snapshots/dbo-snapshots/2020.02.20-120144\n* on your website:\n  * include the DBpedia logo and mention the usage of DBpedia with this link: https://databus.dbpedia.org/dbpedia\n  * include backlinks from your pages to the individual entities, e.g. http://dbpedia.org/resource/Berlin\n* in academic publications cite: DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia, J. Lehmann, R. Isele, M. Jakob, A. Jentzsch, D. Kontokostas, P. Mendes, S. Hellmann, M. Morsey, P. van Kleef, S. Auer, and C. Bizer. Semantic Web Journal 6 (2): 167--195 (2015)\n\n## How to contribute\nDBpedia is a community project, help us with:\n* editing the mappings and ontology at http://mappings.dbpedia.org\n* improve this documentation at https://github.com/dbpedia/databus-maven-plugin/tree/master/dbpedia/mappings/dbo-snapshots/dbo-snapshots.md\n\n## Origin\nThis dataset was extracted using the wikipedia-dumps available on https://dumps.wikimedia.org/\nusing the DBpedia Extraction-Framework available at https://github.com/dbpedia/extraction-framework\nFor more technical information on how these datasets were generated, please visit http://dev.dbpedia.org\n\n## Group changelog" ;
+        dataid:groupdocu        "## Attribution fulfilled by\n* (when deriving another dataset and releasing to the Databus) adding the Databus link to the provenance https://databus.dbpedia.org/dbpedia/ontology/dbo-snapshots/dbo-snapshots/2020.02.24-073451\n* on your website:\n  * include the DBpedia logo and mention the usage of DBpedia with this link: https://databus.dbpedia.org/dbpedia\n  * include backlinks from your pages to the individual entities, e.g. http://dbpedia.org/resource/Berlin\n* in academic publications cite: DBpedia - A Large-scale, Multilingual Knowledge Base Extracted from Wikipedia, J. Lehmann, R. Isele, M. Jakob, A. Jentzsch, D. Kontokostas, P. Mendes, S. Hellmann, M. Morsey, P. van Kleef, S. Auer, and C. Bizer. Semantic Web Journal 6 (2): 167--195 (2015)\n\n## How to contribute\nDBpedia is a community project, help us with:\n* editing the mappings and ontology at http://mappings.dbpedia.org\n* improve this documentation at https://github.com/dbpedia/databus-maven-plugin/tree/master/dbpedia/mappings/dbo-snapshots/dbo-snapshots.md\n\n## Origin\nThis dataset was extracted using the wikipedia-dumps available on https://dumps.wikimedia.org/\nusing the DBpedia Extraction-Framework available at https://github.com/dbpedia/extraction-framework\nFor more technical information on how these datasets were generated, please visit http://dev.dbpedia.org\n\n## Group changelog" ;
         dataid:maintainer       <https://gcpdev.github.io/webid.ttl#this> ;
-        dataid:version          <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144> ;
+        dataid:version          <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451> ;
         dct:conformsTo          "http://dataid.dbpedia.org/ns/core#" ;
         dct:description         "## Workflow\nDBpedia Ontology snapshots are fetched from http://mappings.dbpedia.org/server/ontology/dbpedia.owl every 30 minutes but are published on the Databus and committed to the [DBpedia Ontology Github repository](https://github.com/dbpedia/ontology-tracker/ \"DBpedia Ontology Github repository\") if and only if changes in the ontology were detected.\nThe DBpedia Ontology and Mappings can be edited in the [mappings wiki](http://mappings.dbpedia.org/server/ontology/dbpedia.owl  \"mappings wiki\").\nThe Github repository contains the [Databus repo](https://github.com/dbpedia/ontology-tracker/tree/master/databus/dbpedia/ontology/dbo-snapshots \"Databus repo\") for publishing the ontology and therefore can be used to diff the changes between versions. The file `dbo-snapshots.dl` shows the changes of axioms while `dbo-snapshots.nt` is ideal for line-based diffs of the entire ontology since it is sorted (bytewise sort order).\nThe code for the service can be found [here](https://github.com/dbpedia/ontology-tracker/blob/master/databus/dbpedia/ontology/databus-ontology-diffbot.sh \"databus-ontology-diffbot.sh\").\n\n\n## Artifact changelog\n### 2019-08-27\nintroduced new 30 minute diff-based publishing approach\n### 2019-02-21\nInitial manual commit, deployment as chronjob pending" ;
-        dct:hasVersion          "2020.02.20-120144" ;
-        dct:issued              "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:hasVersion          "2020.02.24-073451" ;
+        dct:issued              "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license             <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
         dct:publisher           <https://yum-yab.github.io/webid.ttl#this> ;
         dct:title               "DBpedia Ontology Snapshots"@en ;
@@ -94,24 +97,24 @@ dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
         dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:compression           "None" ;
         dataid:duplicates            "0"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144/dbo-snapshots.nt> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451/dbo-snapshots.nt> ;
         dataid:formatExtension       "nt" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
-        dataid:nonEmptyLines         "32010"^^xsd:decimal ;
+        dataid:nonEmptyLines         "32011"^^xsd:decimal ;
         dataid:preview               "<http://dbpedia.org/datatype/Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .\n<http://dbpedia.org/datatype/Area> <http://www.w3.org/2000/01/rdf-schema#label> \"Area\"@en .\n<http://dbpedia.org/datatype/Currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .\n<http://dbpedia.org/datatype/Currency> <http://www.w3.org/2000/01/rdf-schema#label> \"Currency\"@en .\n<http://dbpedia.org/datatype/Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .\n<http://dbpedia.org/datatype/Density> <http://www.w3.org/2000/01/rdf-schema#label> \"Density\"@en .\n<http://dbpedia.org/datatype/ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .\n<http://dbpedia.org/datatype/ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#label> \"ElectricCurrent\"@en .\n<http://dbpedia.org/datatype/Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .\n<http://dbpedia.org/datatype/Energy> <http://www.w3.org/2000/01/rdf-schema#label> \"Energy\"@en ." ;
-        dataid:sha256sum             "6af7c6b6a958207b306568457c7fc5a826c5eb36fc16af61d3d4e821101644c2" ;
-        dataid:signature             "XCC7eMXZ9OUOQKhCzKBF6+L4ln7LKelbKgVm7XS56LQ2rIGa3PRPWPW8598E8FBGI/OoNdWe4nQn3RxYbnqj9xmKTU8FoOO3e0l0V8KIp9Mpz+mw5/Edlg4mRfJWfZi1lr19JyzeLB7D/yOE29XFoXJ9QFUFFySMWBTdMuvi14Q/gP1RCheEeINlafqbRZ23fmiQnOY0uv5DF5yicEEebhOUy1U4u5H4E8l+VPdE4OLwZ0wvzoq6VPTwO6mKeWLaOmo+/b4m+Lt3X5Zzd04sFsmhfTu+lSRw4w5j8+QksGmNummavWZHv4aZtFVZRDsFmDAyWrOwc4IJjv18lBEYtw==" ;
+        dataid:sha256sum             "a6337cabf7e3ecf8a1bf4c96b083768dcf4e304438292aee3a079c75df997e53" ;
+        dataid:signature             "chd3LRHYFmKfSjUYdlSusdqgiyXSmh7aHPCd80P7QXk9LmQuQCvPveBvPdE88S4W7XTO5ZPq5mQPzMjaORgdjJ1AvrTFIkyvkYW47xegAfO6kINBkURoVCVS8BxcqgOMnC0nkV13LXdjlh79yzVhrMsmG3SCPvBRM9wiSLEn5fSskfsAfeVZ6xXqYxti6n2V/TJSOPH7Y616Wmu1AToNELlV0yCqTUwqK/BpcF5AISe0ZAi6WvQjA6iyROQNuB+AKy7WXIM84e6YgPZCZP+FiEkcCTW19FHqa34IsUax9Hnxe1mfmg6DtkjJ7tytMef4yDhFKamfUzcAOypdbUhjQA==" ;
         dataid:sorted                true ;
-        dataid:uncompressedByteSize  "4405135"^^xsd:decimal ;
+        dataid:uncompressedByteSize  "4405236"^^xsd:decimal ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.20-120144" ;
-        dct:issued                   "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.02.24-073451" ;
+        dct:issued                   "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-20T12:01:45Z"^^xsd:dateTime ;
+        dct:modified                 "2020-02-24T07:34:53Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
-        dcat:byteSize                "4405135"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/08e5f394cabb73bac95d937908e63ab080b55611/ontology/dbo-snapshots/dbo-snapshots.nt> ;
+        dcat:byteSize                "4405236"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/73dba7cd702d85bc7132236567f0f6e47ccbe037/ontology/dbo-snapshots/dbo-snapshots.nt> ;
         dcat:mediaType               dataid-mt:ApplicationNTriples .
 
 <https://databus.dbpedia.org/denis/ontology/dbo-snapshots>
@@ -121,7 +124,7 @@ dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
         dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:compression           "None" ;
         dataid:duplicates            "0"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144/dbo-snapshots.dl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451/dbo-snapshots.dl> ;
         dataid:formatExtension       "" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
@@ -132,17 +135,14 @@ dataid-mt:UNKNOWN  a     dataid-mt:MediaType ;
         dataid:sorted                true ;
         dataid:uncompressedByteSize  "459085"^^xsd:decimal ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.20-120144" ;
-        dct:issued                   "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.02.24-073451" ;
+        dct:issued                   "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-20T12:01:47Z"^^xsd:dateTime ;
+        dct:modified                 "2020-02-24T07:34:54Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
         dcat:byteSize                "459085"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/08e5f394cabb73bac95d937908e63ab080b55611/ontology/dbo-snapshots/dbo-snapshots.dl> ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/73dba7cd702d85bc7132236567f0f6e47ccbe037/ontology/dbo-snapshots/dbo-snapshots.dl> ;
         dcat:mediaType               dataid-mt:UNKNOWN .
-
-<https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144>
-        a       dataid:Version .
 
 dataid-mt:ApplicationNTriples
         a                dataid-mt:MediaType ;
@@ -152,22 +152,22 @@ dataid-mt:ApplicationNTriples
         dataid:associatedAgent       <https://yum-yab.github.io/webid.ttl#this> ;
         dataid:compression           "None" ;
         dataid:duplicates            "0"^^xsd:decimal ;
-        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.20-120144/dbo-snapshots.owl> ;
+        dataid:file                  <https://databus.dbpedia.org/denis/ontology/dbo-snapshots/2020.02.24-073451/dbo-snapshots.owl> ;
         dataid:formatExtension       "owl" ;
         dataid:isDistributionOf      <#Dataset> ;
         dataid:maintainer            <https://gcpdev.github.io/webid.ttl#this> ;
         dataid:nonEmptyLines         "8530"^^xsd:decimal ;
         dataid:preview               "<?xml version=\"1.0\" encoding=\"utf-8\"?><rdf:RDF xml:base=\"http://dbpedia.org/ontology/\" xmlns:foaf=\"http://xmlns.com/foaf/0.1/\" xmlns:cc=\"http://creativecommons.org/ns#\" xmlns:vann=\"http://purl.org/vocab/vann/\" xmlns:dcterms=\"http://purl.org/dc/terms/\" xmlns:dc=\"http://purl.org/dc/elements/1.1/\" xmlns:wgs84pos=\"http://www.w3.org/2003/01/geo/wgs84_pos#\" xmlns:cidoccrm=\"http://purl.org/NET/cidoc-crm/core#\" xmlns:wikidata=\"http://www.wikidata.org/entity/\" xmlns:dul=\"http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#\" xmlns:d0=\"http://www.ontologydesignpatterns.org/ont/d0.owl#\" xmlns:owl=\"http://www.w3.org/2002/07/owl#\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema#\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\" xmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\" xmlns:prov=\"http://www.w3.org/ns/prov#\" xmlns=\"http://dbpedia.org/ontology/\">\n\n          <owl:Ontology rdf:about=\"http://dbpedia.org/ontology/\">\n            <rdf:type rdf:resource=\"http://purl.org/vocommons/voaf#Vocabulary\"/>\n            <vann:preferredNamespacePrefix>dbo</vann:preferredNamespacePrefix>\n            <vann:preferredNamespaceUri>http://dbpedia.org/ontology/</vann:preferredNamespaceUri>\n            <dcterms:title xml:lang=\"en\">The DBpedia Ontology</dcterms:title>\n            <dcterms:description xml:lang=\"en\">\n              The DBpedia ontology provides the classes and properties used in the DBpedia data set.\n            </dcterms:description>" ;
-        dataid:sha256sum             "6ed2b0d0cd185b5cf2a05fa68958b9f9790caf5240d504f31bcc3e1a31376302" ;
-        dataid:signature             "WppFoAfFXM/aG+KvAAA/uiGM2AEOJb+L6zN1UKST+vABa3wqCSrLPAOqLvaIn3UBPwZ0kjwtsXGKPL5f0ObicMCBkengVtGmzuiJy/2tU0SiggizVTwQ35jC7/1NCBOccoruyeUp46WPBTlQqvGSQ8nJcjIvX0v+YrYfCjfHC69z0jN7ARoM3zz2ij+tLFkxQrqXJUwe1zHJacJXutYkavtUStmnTtYzijKodVGM9y0wf/BZ8uDDtzEyi7XRyu0Lf1SovjcmdCST21p23h++i6kHbshv7D2Sd9R3YQdk+v7t+nk0jMtYc1hAfQ7SPswbbbcanbKiJ5XN4WTt2qgLLA==" ;
+        dataid:sha256sum             "19c6bd5233409690c4be9a574817eb2001c224cdc16e1b977bd2408af0408cb6" ;
+        dataid:signature             "dUrbJZLkzv65WGxZojwcUFro/zKLJJwKkewVxDVwkAqT+rDfnZkzTOnA+8fWWq6G0OXC1FrqnG+mhxIA+LRj9b1F5LF5i6BpLCbCE169peLtV4KqrGuWNCc2jyPuHz6+vRGYCA8049+Q+GZQQtNyYsM/DKY9zSvsOPGk7Dv7sT9+7qaarsSDPDYG2xWelNZDuET5IgcCoABJH4Oqago+ycaezMMPcvmzm7ADJjG1f9zOOeG8ZlY3PW1cvb8/EWSxEiq3yOkWbObrw8km0s6F/N/nv1FwFBhufscACDB6EonBCeLDwSRnAhbr+9mV9QWdTV2wu710Rk5aWJpG3RbUEQ==" ;
         dataid:sorted                false ;
-        dataid:uncompressedByteSize  "2522443"^^xsd:decimal ;
+        dataid:uncompressedByteSize  "2522491"^^xsd:decimal ;
         dct:conformsTo               "http://dataid.dbpedia.org/ns/core#" ;
-        dct:hasVersion               "2020.02.20-120144" ;
-        dct:issued                   "2020-02-20T12:04:12Z"^^xsd:dateTime ;
+        dct:hasVersion               "2020.02.24-073451" ;
+        dct:issued                   "2020-02-24T07:38:32Z"^^xsd:dateTime ;
         dct:license                  <http://purl.oclc.org/NET/rdflicense/cc-by3.0> ;
-        dct:modified                 "2020-02-20T12:01:45Z"^^xsd:dateTime ;
+        dct:modified                 "2020-02-24T07:34:53Z"^^xsd:dateTime ;
         dct:publisher                <https://yum-yab.github.io/webid.ttl#this> ;
-        dcat:byteSize                "2522443"^^xsd:decimal ;
-        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/08e5f394cabb73bac95d937908e63ab080b55611/ontology/dbo-snapshots/dbo-snapshots.owl> ;
+        dcat:byteSize                "2522491"^^xsd:decimal ;
+        dcat:downloadURL             <https://raw.githubusercontent.com/yum-yab/actions-test/73dba7cd702d85bc7132236567f0f6e47ccbe037/ontology/dbo-snapshots/dbo-snapshots.owl> ;
         dcat:mediaType               dataid-mt:ApplicationRDFXML .
